@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="webContainer">
+  <div>
+    <table class="table table-striped table-bordered"  style="font-size:30px; font-weight:bold">
+      <tr>
+        <td>Tilt Left/Right [gamma]</td>
+        <td id="doTiltLR"></td>
+      </tr>
+      <tr>
+        <td>Tilt Front/Back [beta]</td>
+        <td id="doTiltFB"></td>
+      </tr>
+      <tr>
+        <td>Direction [alpha]</td>
+        <td id="doDirection"></td>
+      </tr>
+      <tr style="font-size:30px;">
+        <td>scale: </td>
+        <td id="scale"></td>
+      </tr>
+      <tr style="font-size:30px;">
+        <td>Session ID: </td>
+        <td id="message"></td>
+      </tr>
+    </table>
+
+    <div class="btnContainer">
+      <button id="whiteBtn" class="btn" type="button">White</button>
+      <button id="redBtn" class="btn" type="button">Red</button>
+      <button id="blueBtn" class="btn" type="button">Black</button>
+    </div>
+
+    <div class="container" id="logoContainer" style="text-align: center; padding: 90px 0; border: 1px;">
+      <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" id="imgLogo">
+    </div>
+
+  </div>
+  <div id="divId" style="color:red">
+    <p id="sessionId"></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+
+</body>
+</html>

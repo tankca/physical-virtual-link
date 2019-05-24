@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+      body {
+          background: #aaa;
+          overflow: hidden;
+      }
+  </style>
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="Type here..."/>
+    </li>
+
+    <li class="login page">
+      <div class="form">
+        <h3 class="title">Please enter the sessionId to start</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+    </li>
+  </ul>
+
+  <div id="container">
+    <p id="message"></p>
+  </div>
+
+  <script src="/js/three.min.js"></script>
+  <script src="/js/objloader.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/display.js"></script>
+  <script src="/3d.js"></script>
+</body>
+</html>
